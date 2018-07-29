@@ -1,0 +1,16 @@
+		// SimpleJdbcInsert approach
+		/*
+		 * var insert = new SimpleJdbcInsert(jdbcTemplate);
+		 * 
+		 * var columns = Arrays.asList("name", "duration"); insert.setTableName("ride");
+		 * insert.setColumnNames(columns);
+		 * 
+		 * var data = new HashMap<String,Object>(); data.put("name", ride.getName());
+		 * data.put("duration", ride.getDuration());
+		 * 
+		 * insert.setGeneratedKeyName("id");
+		 * 
+		 * Number key = insert.executeAndReturnKey(data);
+		 * 
+		 * System.out.println("key="+key);
+		 */
